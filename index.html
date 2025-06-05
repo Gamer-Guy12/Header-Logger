@@ -9,7 +9,7 @@
     3e
     <script>
         var window = window.open("https://gimkit.com/join")
-        window.document.body.innerHTML += "<script>" + "browser.webRequest.onHeadersReceived.addListener((data) => {console.log(data)}, {}, ['responseHeaders'])" + "<" + "/script>"
+        window.document.body.innerHTML += "<script>" + "browser.webRequest.onHeadersReceived.addListener((data) => {alert(data)}, {}, ['responseHeaders'])" + "<" + "/script>"
     </script>
 </body>
 </html>
